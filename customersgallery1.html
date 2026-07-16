@@ -1,0 +1,3634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CustomersGallery - I DID SOLUTION</title>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+
+	<link id="wsite-base-style" rel="stylesheet" type="text/css"
+		href="http://cdn11.editmysite.com/css/sites.css?buildtime=1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/old/fancybox.css?buildtime=1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/social-icons.css?buildtime=1234"
+		media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="files/main_style.css?1783910034" title="wsite-theme-css" />
+	<link href='http://cdn2.editmysite.com/fonts/Lato/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Lora/font.css?2' rel='stylesheet' type='text/css' />
+
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Sans/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Serif/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Coustard/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Serif/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Serif/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Open_Sans/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Actor/font.css?2' rel='stylesheet' type='text/css' />
+	<style type='text/css'>
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {
+			font-family: "Droid Sans" !important;
+		}
+
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {
+			color: #818181 !important;
+		}
+
+		.wsite-elements.wsite-footer div.paragraph,
+		.wsite-elements.wsite-footer p,
+		.wsite-elements.wsite-footer .product-block .product-title,
+		.wsite-elements.wsite-footer .product-description,
+		.wsite-elements.wsite-footer .wsite-form-field label,
+		.wsite-elements.wsite-footer .wsite-form-field label {}
+
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {
+			font-family: "Droid Serif" !important;
+			font-style: normal !important;
+			letter-spacing: 0px !important;
+		}
+
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {
+			color: #2a2a2a !important;
+		}
+
+		.wsite-elements.wsite-footer h2,
+		.wsite-elements.wsite-footer .product-long .product-title,
+		.wsite-elements.wsite-footer .product-large .product-title,
+		.wsite-elements.wsite-footer .product-small .product-title {
+			font-family: "Coustard" !important;
+			color: #513c2d !important;
+			letter-spacing: 1px !important;
+		}
+
+		#wsite-title {
+			font-family: "Droid Serif" !important;
+			font-weight: 700 !important;
+			font-style: normal !important;
+			text-transform: uppercase !important;
+		}
+
+		.wsite-not-footer h2.wsite-content-title a,
+		.wsite-not-footer .paragraph a,
+		.wsite-not-footer blockquote a,
+		#blogTable .blog-sidebar a,
+		#blogTable .blog-comments a,
+		#blogTable .blog-comments-bottom a,
+		#wsite-com-store a,
+		#wsite-com-product-gen a {
+			color: #2a2a2a !important;
+		}
+
+		.wsite-menu-default a {}
+
+		.wsite-menu a {}
+
+		.wsite-image div,
+		.wsite-caption {}
+
+		.galleryCaptionInnerText {}
+
+		.fancybox-title {}
+
+		.wslide-caption-text {}
+
+		.wsite-phone {}
+
+		.wsite-headline,
+		.wsite-header-section .wsite-content-title {
+			font-family: "Droid Serif" !important;
+			font-weight: 700 !important;
+			color: #fff !important;
+			font-style: normal !important;
+			text-transform: uppercase !important;
+			letter-spacing: 4px !important;
+		}
+
+		.wsite-headline-paragraph,
+		.wsite-header-section .paragraph {
+			font-family: "Open Sans" !important;
+			color: #fdf9f9 !important;
+		}
+
+		.wsite-button-inner {
+			font-family: "Actor" !important;
+			font-style: normal !important;
+		}
+
+		.wsite-not-footer blockquote {}
+
+		.wsite-footer blockquote {}
+
+		.blog-header h2 a {}
+
+		#wsite-content h2.wsite-product-title {}
+
+		.wsite-product .wsite-product-price a {}
+
+		.wsite-not-footer h2.wsite-content-title a:hover,
+		.wsite-not-footer .paragraph a:hover,
+		.wsite-not-footer blockquote a:hover,
+		#blogTable .blog-sidebar a:hover,
+		#blogTable .blog-comments a:hover,
+		#blogTable .blog-comments-bottom a:hover,
+		#wsite-com-store a:hover,
+		#wsite-com-product-gen a:hover {
+			color: #8d5024 !important;
+		}
+
+		.wsite-button-small .wsite-button-inner {
+			font-size: 14px !important;
+		}
+
+		.wsite-button-large .wsite-button-inner {
+			font-size: 15px !important;
+		}
+
+		@media screen and (min-width: 767px) {
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {
+				font-size: 17px !important;
+				line-height: 33px !important;
+			}
+
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {}
+
+			.wsite-elements.wsite-footer div.paragraph,
+			.wsite-elements.wsite-footer p,
+			.wsite-elements.wsite-footer .product-block .product-title,
+			.wsite-elements.wsite-footer .product-description,
+			.wsite-elements.wsite-footer .wsite-form-field label,
+			.wsite-elements.wsite-footer .wsite-form-field label {}
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {
+				line-height: 23px !important;
+			}
+
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {}
+
+			.wsite-elements.wsite-footer h2,
+			.wsite-elements.wsite-footer .product-long .product-title,
+			.wsite-elements.wsite-footer .product-large .product-title,
+			.wsite-elements.wsite-footer .product-small .product-title {
+				font-size: 13px !important;
+			}
+
+			#wsite-title {
+				font-size: 22px !important;
+			}
+
+			.wsite-menu-default a {}
+
+			.wsite-menu a {}
+
+			.wsite-image div,
+			.wsite-caption {}
+
+			.galleryCaptionInnerText {}
+
+			.fancybox-title {}
+
+			.wslide-caption-text {}
+
+			.wsite-phone {}
+
+			.wsite-headline,
+			.wsite-header-section .wsite-content-title {
+				font-size: 58px !important;
+				line-height: 60px !important;
+			}
+
+			.wsite-headline-paragraph,
+			.wsite-header-section .paragraph {
+				font-size: 18px !important;
+			}
+
+			.wsite-button-inner {}
+
+			.wsite-not-footer blockquote {}
+
+			.wsite-footer blockquote {}
+
+			.blog-header h2 a {}
+
+			#wsite-content h2.wsite-product-title {}
+
+			.wsite-product .wsite-product-price a {}
+		}
+	</style>
+	<style>
+		.wsite-background {
+			background-image: url("/uploads/1/4/2/1/142179781/background-images/1177546391.jpg") !important;
+			background-repeat: no-repeat !important;
+			background-position: 50% 50% !important;
+			background-size: 100% !important;
+			background-color: transparent !important;
+			background: inherit;
+		}
+
+		body.wsite-background {
+			background-attachment: fixed !important;
+		}
+
+		.wsite-background.wsite-custom-background {
+			background-size: cover !important
+		}
+	</style>
+	<script src='files/templateArtifacts.js?1782283792'></script>
+	<script>
+		var STATIC_BASE = '//cdn1.editmysite.com/';
+		var ASSETS_BASE = '//cdn11.editmysite.com/';
+		var STYLE_PREFIX = 'wsite';
+	</script>
+	<script src='https://cdn11.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+	<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+	<script src="http://cdn11.editmysite.com/js/site/main.js?buildtime=1234"></script>
+	<script type="text/javascript">
+		function initCustomerAccountsModels() {
+			(function () {
+				_W.setup_rpc({ "url": "\/ajax\/api\/JsonRPC\/CustomerAccounts\/", "actions": { "CustomerAccounts": [{ "name": "login", "len": 2, "multiple": false, "standalone": false }, { "name": "logout", "len": 0, "multiple": false, "standalone": false }, { "name": "getSessionDetails", "len": 0, "multiple": false, "standalone": false }, { "name": "getAccountDetails", "len": 0, "multiple": false, "standalone": false }, { "name": "getOrders", "len": 0, "multiple": false, "standalone": false }, { "name": "register", "len": 4, "multiple": false, "standalone": false }, { "name": "emailExists", "len": 1, "multiple": false, "standalone": false }, { "name": "passwordReset", "len": 1, "multiple": false, "standalone": false }, { "name": "passwordUpdate", "len": 3, "multiple": false, "standalone": false }, { "name": "validateSession", "len": 1, "multiple": false, "standalone": false }] }, "namespace": "_W.CustomerAccounts.RPC" });
+				_W.setup_model_rpc({ "rpc_namespace": "_W.CustomerAccounts.RPC", "model_namespace": "_W.CustomerAccounts.BackboneModelData", "collection_namespace": "_W.CustomerAccounts.BackboneCollectionData", "bootstrap_namespace": "_W.CustomerAccounts.BackboneBootstrap", "models": { "CustomerAccounts": { "_class": "CustomerAccounts.Model.CustomerAccounts", "defaults": null, "validation": null, "types": null, "idAttribute": null, "keydefs": null } }, "collections": { "CustomerAccounts": { "_class": "CustomerAccounts.Collection.CustomerAccounts" } }, "bootstrap": [] });
+			})();
+		}
+		if (document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if (document.documentElement.initCustomerAccountsModels === 0) {
+			document.documentElement.initCustomerAccountsModels++
+		}
+	</script>
+	<script type="text/javascript"> _W = _W || {}; _W.securePrefix = 'UNSET'; </script>
+	<script>_W = _W || {};
+		_W.customerLocale = "en_US";
+		_W.storeName = null;
+		_W.isCheckoutReskin = false;
+		_W.storeCountry = "MY";
+		_W.storeCurrency = "MYR";
+		_W.storeEuPrivacyPolicyUrl = "";
+		com_currentSite = "184871675833079619";
+		com_userID = "142179781";</script>
+	<script type="text/javascript">_W.configDomain = "";</script>
+	<script>_W.relinquish && _W.relinquish()</script>
+	<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+	<script> _W.themePlugins = { "navpane": { "condense": 1024, "forced": 1 } };</script>
+	<script src='http://cdn11.editmysite.com/js/site/theme-plugins.js?buildtime=1234'></script>
+	<script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script>
+	<script src='files/custom.js?'></script>
+
+
+</head>
+
+<body class="header-page  wsite-page-customersgallery1  wsite-theme-light">
+	<div id="header">
+		<div class="container">
+			<div class="icons">
+				<div class="w-navpane-trigger hamburger">
+					<span></span>
+				</div>
+			</div>
+			<div class="logo"><span class="wsite-logo">
+
+					<a href="">
+						<img src="uploads/1/4/2/1/142179781/logo-i-did.png" alt="I DID SOLUTION" />
+					</a>
+
+				</span></div>
+			<div class="icons">
+				<span class="wsite-search">
+					<form id="wsite-header-search-form" action="/apps/search" method="get">
+						<input type="text" name="q" class="wsite-search-input" autocomplete="off"
+							placeholder="Search" /><span class="wsite-search-button"><span
+								class="wsite-search-button-inner"></span></span>
+					</form>
+				</span>
+
+				<a href="#" class="close w-navpane-close"><span></span></a>
+			</div>
+		</div>
+		<div id="navlist" class="w-navlist nav">
+			<ul class="wsite-menu-default">
+
+				<li id="pg817708672520187469" class="wsite-menu-item-wrap">
+					<a href="index.html" class="wsite-menu-item ">
+						Home
+
+					</a>
+
+				</li>
+				<li id="pg951052402158070607" class="wsite-menu-item-wrap">
+					<a href="about-us.html" class="wsite-menu-item ">
+						About Us
+
+					</a>
+
+				</li>
+				<li id="pg646423909545470739" class="wsite-menu-item-wrap">
+					<a href="locations.html" class="wsite-menu-item ">
+						Locations
+
+					</a>
+
+				</li>
+				<li id="pg931450842924258809" class="wsite-menu-item-wrap">
+					<a href="contact-us.html" class="wsite-menu-item ">
+						Contact Us
+
+					</a>
+
+				</li>
+				<li id="pg221003514715643967" class="wsite-menu-item-wrap">
+					<a href="price-list.html" class="wsite-menu-item ">
+						Price List
+
+					</a>
+
+				</li>
+				<li id="pg884099455981035589" class="wsite-menu-item-wrap">
+					<a href="new-arrival.html" class="wsite-menu-item ">
+						New Arrival
+
+					</a>
+
+				</li>
+			</ul>
+		</div>
+		<div id="menu" class="slide-panel">
+			<div id="nav" class="nav w-navpane">
+				<div class="container">
+					<ul class="wsite-menu-default">
+
+						<li id="pg817708672520187469" class="wsite-menu-item-wrap">
+							<a href="index.html" class="wsite-menu-item ">
+								Home
+
+							</a>
+
+						</li>
+						<li id="pg951052402158070607" class="wsite-menu-item-wrap">
+							<a href="about-us.html" class="wsite-menu-item ">
+								About Us
+
+							</a>
+
+						</li>
+						<li id="pg646423909545470739" class="wsite-menu-item-wrap">
+							<a href="locations.html" class="wsite-menu-item ">
+								Locations
+
+							</a>
+
+						</li>
+						<li id="pg931450842924258809" class="wsite-menu-item-wrap">
+							<a href="contact-us.html" class="wsite-menu-item ">
+								Contact Us
+
+							</a>
+
+						</li>
+						<li id="pg221003514715643967" class="wsite-menu-item-wrap">
+							<a href="price-list.html" class="wsite-menu-item ">
+								Price List
+
+							</a>
+
+						</li>
+						<li id="pg884099455981035589" class="wsite-menu-item-wrap">
+							<a href="new-arrival.html" class="wsite-menu-item ">
+								New Arrival
+
+							</a>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="search" class="slide-panel">
+			<div class="container">Search by typing &amp; pressing enter</div>
+		</div>
+		<div id="cart" class="slide-panel">
+			<div class="container">
+				<h2>YOUR CART</h2>
+			</div>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="banner">
+			<div class="wsite-elements wsite-not-footer wsite-header-elements">
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-header-section wsite-section-bg-image"
+						style='background-image: url("uploads/1/4/2/1/142179781/background-images/1473782696.jpg") ;background-repeat: no-repeat ;background-position: 50.00% 19.15% ;background-size: 100% ;background-color: transparent ;background-size: cover;'>
+						<div class="wsite-section-content">
+
+							<div class="banner-content">
+								<div class="container">
+									<div class="wsite-section-elements">
+										<div id="798107153258830145">
+											<div>
+												<style type="text/css">
+													#element-4ba4929d-bd8d-44e3-b9dd-22a478f98bfa .colored-box-content {
+														clear: both;
+														float: left;
+														width: 100%;
+														-moz-box-sizing: border-box;
+														-webkit-box-sizing: border-box;
+														-ms-box-sizing: border-box;
+														box-sizing: border-box;
+														background-color: rgba(244, 247, 248, 0.7);
+														padding-top: 20px;
+														padding-bottom: 20px;
+														padding-left: 20px;
+														padding-right: 20px;
+														-webkit-border-top-left-radius: 0px;
+														-moz-border-top-left-radius: 0px;
+														border-top-left-radius: 0px;
+														-webkit-border-top-right-radius: 0px;
+														-moz-border-top-right-radius: 0px;
+														border-top-right-radius: 0px;
+														-webkit-border-bottom-left-radius: 0px;
+														-moz-border-bottom-left-radius: 0px;
+														border-bottom-left-radius: 0px;
+														-webkit-border-bottom-right-radius: 0px;
+														-moz-border-bottom-right-radius: 0px;
+														border-bottom-right-radius: 0px;
+													}
+												</style>
+												<div id="element-4ba4929d-bd8d-44e3-b9dd-22a478f98bfa"
+													data-platform-element-id="848857247979793891-1.0.1"
+													class="platform-element-contents">
+													<div class="colored-box">
+														<div class="colored-box-content">
+															<div style="width: auto">
+																<div></div>
+																<h2 class="wsite-content-title"
+																	style="text-align:center;">
+																	<font color="#2a2a2a">CUSTOMER's gallery</font>
+																</h2>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div style="clear:both;"></div>
+												<script type="text/javascript" class="element-script">function setupElement798107153258830145() {
+														var requireFunc = window.platformElementRequire || window.require;
+
+														// Relies on a global require, specific to platform elements
+														requireFunc([
+															'w-global',
+															'underscore',
+															'jquery',
+															'backbone',
+															'util/platform/elements/PlatformElement',
+															'util/platform/elements/PlatformElementSettings'
+														], function (
+															_W,
+															_,
+															$,
+															Backbone,
+															PlatformElement,
+															PlatformElementSettings
+														) {
+															var dependencies = null || [];
+															var platform_element_id = "848857247979793891-1.0.1";
+
+															if (typeof _W.loadedPlatformDependencies === 'undefined') {
+																_W.loadedPlatformDependencies = [];
+															}
+
+															if (typeof _W.platformElements === 'undefined') {
+																_W.platformElements = [];
+															}
+
+															if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+																_W.platformElements[platform_element_id] = {};
+																_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+																_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+															}
+
+															if (_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length) {
+																_.reduce(dependencies, function (promise, nextScript) {
+																	_W.loadedPlatformDependencies.push(nextScript);
+																	return promise.then(function () {
+																		return $.getScript(nextScript);
+																	});
+																}, $().promise()).then(function () {
+																	_W.platformElements[platform_element_id].deferredObject.resolve();
+																});
+															}
+
+															if (dependencies.length === 0) {
+																_W.platformElements[platform_element_id].deferredObject.resolve();
+															}
+
+															_W.platformElements[platform_element_id].deferredPromise.done(function () {
+																var _ElementDefinition = /**
+ * This is required for element rendering to be possible
+ * @type {PlatformElement}
+ */
+																	(function () {
+																		var ColoredBox = PlatformElement.extend({
+
+																			initialize: function () {
+																			}
+
+																		});
+
+																		return ColoredBox;
+																	})();
+
+																if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+																	var _ElementDefinition = PlatformElement.extend({});
+																}
+
+																var _Element = _ElementDefinition.extend({
+																	initialize: function () {
+																		// we still want to call the initialize function defined by the developer
+																		// however, we don't want to call it until placeholders have been replaced
+																		this.placeholderInterval = setInterval(function () {
+																			// so use setInterval to check for placeholders.
+																			if (this.$('.platform-element-child-placeholder').length == 0) {
+																				clearInterval(this.placeholderInterval);
+																				this.constructor.__super__.initialize.apply(this);
+																			}
+																		}.bind(this), 100);
+																	}
+																});
+
+																_Element.prototype.settings = new PlatformElementSettings({ "top_padding_each": [{ "top_padding_index": 0 }, { "top_padding_index": 1 }, { "top_padding_index": 2 }, { "top_padding_index": 3 }, { "top_padding_index": 4 }, { "top_padding_index": 5 }, { "top_padding_index": 6 }, { "top_padding_index": 7 }, { "top_padding_index": 8 }, { "top_padding_index": 9 }, { "top_padding_index": 10 }, { "top_padding_index": 11 }, { "top_padding_index": 12 }, { "top_padding_index": 13 }, { "top_padding_index": 14 }, { "top_padding_index": 15 }, { "top_padding_index": 16 }, { "top_padding_index": 17 }, { "top_padding_index": 18 }, { "top_padding_index": 19 }], "bottom_padding_each": [{ "bottom_padding_index": 0 }, { "bottom_padding_index": 1 }, { "bottom_padding_index": 2 }, { "bottom_padding_index": 3 }, { "bottom_padding_index": 4 }, { "bottom_padding_index": 5 }, { "bottom_padding_index": 6 }, { "bottom_padding_index": 7 }, { "bottom_padding_index": 8 }, { "bottom_padding_index": 9 }, { "bottom_padding_index": 10 }, { "bottom_padding_index": 11 }, { "bottom_padding_index": 12 }, { "bottom_padding_index": 13 }, { "bottom_padding_index": 14 }, { "bottom_padding_index": 15 }, { "bottom_padding_index": 16 }, { "bottom_padding_index": 17 }, { "bottom_padding_index": 18 }, { "bottom_padding_index": 19 }], "left_padding_each": [{ "left_padding_index": 0 }, { "left_padding_index": 1 }, { "left_padding_index": 2 }, { "left_padding_index": 3 }, { "left_padding_index": 4 }, { "left_padding_index": 5 }, { "left_padding_index": 6 }, { "left_padding_index": 7 }, { "left_padding_index": 8 }, { "left_padding_index": 9 }, { "left_padding_index": 10 }, { "left_padding_index": 11 }, { "left_padding_index": 12 }, { "left_padding_index": 13 }, { "left_padding_index": 14 }, { "left_padding_index": 15 }, { "left_padding_index": 16 }, { "left_padding_index": 17 }, { "left_padding_index": 18 }, { "left_padding_index": 19 }], "right_padding_each": [{ "right_padding_index": 0 }, { "right_padding_index": 1 }, { "right_padding_index": 2 }, { "right_padding_index": 3 }, { "right_padding_index": 4 }, { "right_padding_index": 5 }, { "right_padding_index": 6 }, { "right_padding_index": 7 }, { "right_padding_index": 8 }, { "right_padding_index": 9 }, { "right_padding_index": 10 }, { "right_padding_index": 11 }, { "right_padding_index": 12 }, { "right_padding_index": 13 }, { "right_padding_index": 14 }, { "right_padding_index": 15 }, { "right_padding_index": 16 }, { "right_padding_index": 17 }, { "right_padding_index": 18 }, { "right_padding_index": 19 }], "background_color": "#f4f7f8", "opacity": 70, "top_left_radius": 0, "top_right_radius": 0, "bottom_left_radius": 0, "bottom_right_radius": 0, "top_padding": 20, "bottom_padding": 20, "left_padding": 20, "right_padding": 20 });
+																_Element.prototype.settings.page_element_id = "798107153258830145";
+
+																_Element.prototype.element_id = "4ba4929d-bd8d-44e3-b9dd-22a478f98bfa";
+																_Element.prototype.user_id = "142179781";
+																_Element.prototype.site_id = "184871675833079619";
+																_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-848857247979793891-1.0.1/assets/";
+																new _Element({
+																	el: '#element-4ba4929d-bd8d-44e3-b9dd-22a478f98bfa'
+																});
+															});
+														});
+
+													}
+
+													if (typeof document.documentElement.appReady == 'undefined') {
+														document.documentElement.appReady = 0;
+													}
+
+													if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+														setupElement798107153258830145();
+													} else if (document.createEvent && document.addEventListener) {
+														document.addEventListener('appReady', setupElement798107153258830145, false);
+													} else {
+														document.documentElement.attachEvent('onpropertychange', function (event) {
+															if (event.propertyName == 'appReady') {
+																setupElement798107153258830145();
+															}
+														});
+													}
+
+												</script>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class=""></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="main">
+			<div id="wsite-content" class="wsite-elements wsite-not-footer">
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-2967 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-multicol">
+											<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+												<table class="wsite-multicol-table">
+													<tbody class="wsite-multicol-tbody">
+														<tr class="wsite-multicol-tr">
+															<td class="wsite-multicol-col"
+																style="width:25%; padding:0 15px;">
+
+
+
+																<div style="text-align:center;">
+																	<div style="height: 10px; overflow: hidden;"></div>
+																	<a class="wsite-button wsite-button-small wsite-button-normal"
+																		href="newlaptop.html">
+																		<span class="wsite-button-inner">New
+																			Laptop</span>
+																	</a>
+																	<div style="height: 10px; overflow: hidden;"></div>
+																</div>
+
+
+
+															</td>
+															<td class="wsite-multicol-col"
+																style="width:25%; padding:0 15px;">
+
+
+
+																<div style="text-align:center;">
+																	<div style="height: 10px; overflow: hidden;"></div>
+																	<a class="wsite-button wsite-button-small wsite-button-normal"
+																		href="laptoprecond.html">
+																		<span class="wsite-button-inner">Recond
+																			Laptop</span>
+																	</a>
+																	<div style="height: 10px; overflow: hidden;"></div>
+																</div>
+
+
+
+															</td>
+															<td class="wsite-multicol-col"
+																style="width:25%; padding:0 15px;">
+
+
+
+																<div style="text-align:center;">
+																	<div style="height: 10px; overflow: hidden;"></div>
+																	<a class="wsite-button wsite-button-small wsite-button-normal"
+																		href="pcgaming.html">
+																		<span class="wsite-button-inner">PC
+																			GAMING</span>
+																	</a>
+																	<div style="height: 10px; overflow: hidden;"></div>
+																</div>
+
+
+
+															</td>
+															<td class="wsite-multicol-col"
+																style="width:25%; padding:0 15px;">
+
+
+
+																<div style="text-align:center;">
+																	<div style="height: 10px; overflow: hidden;"></div>
+																	<a class="wsite-button wsite-button-small wsite-button-normal"
+																		href="pcrecond.html">
+																		<span class="wsite-button-inner">PC
+																			RECOND</span>
+																	</a>
+																	<div style="height: 10px; overflow: hidden;"></div>
+																</div>
+
+
+
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-2968 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<h2 class="wsite-content-title" style="text-align:center;">
+										<font size="7">SHOP'S UPDATE</font>
+									</h2>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4325 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust25042026-05_1.jpeg"
+													alt="Picture" style="width:358;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4326 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust25042026-04_1.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4327 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust25042026-03_1.jpeg"
+													alt="Picture" style="width:355;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4328 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust25042026-02_4.jpeg"
+													alt="Picture" style="width:364;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4329 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust25042026_1.jpeg" alt="Picture"
+													style="width:359;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4330 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust24042026-04_3.jpeg"
+													alt="Picture" style="width:365;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4331 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust24042026-03_1.jpeg"
+													alt="Picture" style="width:366;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4332 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust24042026-02_orig.jpeg"
+													alt="Picture" style="width:374;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4333 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust24042026_1.jpeg" alt="Picture"
+													style="width:362;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4334 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust23042026-02_3.jpeg"
+													alt="Picture" style="width:378;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4335 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust23042026_1.jpeg" alt="Picture"
+													style="width:355;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4336 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust22042026-06_3.jpeg"
+													alt="Picture" style="width:348;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4337 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust22042026-05_1.jpeg"
+													alt="Picture" style="width:364;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4338 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust22042026-04_3.jpeg"
+													alt="Picture" style="width:366;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4339 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust22042026-03_1.jpeg"
+													alt="Picture" style="width:364;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4340 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust22042026-02_1.jpeg"
+													alt="Picture" style="width:353;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4341 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust22042026_1.jpeg" alt="Picture"
+													style="width:370;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4342 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust21042026-05_5.jpeg"
+													alt="Picture" style="width:357;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4343 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust21042026-04_1.jpeg"
+													alt="Picture" style="width:378;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4344 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust21042026-03_1.jpeg"
+													alt="Picture" style="width:352;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4345 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust21042026-02_4.jpeg"
+													alt="Picture" style="width:362;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4346 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust21042026_1.jpeg" alt="Picture"
+													style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4347 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust20042026-03_13.jpeg"
+													alt="Picture" style="width:367;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4348 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust20042026-02_9.jpeg"
+													alt="Picture" style="width:364;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4349 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust20042026_13.jpeg" alt="Picture"
+													style="width:351;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4350 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust19042026-04_12.jpeg"
+													alt="Picture" style="width:380;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4351 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust19042026-03_11.jpeg"
+													alt="Picture" style="width:350;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4352 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust19042026-02_11.jpeg"
+													alt="Picture" style="width:363;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4353 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust19042026_12.jpeg" alt="Picture"
+													style="width:358;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4354 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust18042026-03_12.jpeg"
+													alt="Picture" style="width:356;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4355 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust18042026-02_12.jpeg"
+													alt="Picture" style="width:368;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4356 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust18042026_8.jpeg" alt="Picture"
+													style="width:350;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4357 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4358 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust17042026-07_11.jpeg"
+													alt="Picture" style="width:379;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4359 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust17042026-06_13.jpeg"
+													alt="Picture" style="width:393;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4360 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust17042026-05_11.jpeg"
+													alt="Picture" style="width:381;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4361 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust17042026-04_13.jpeg"
+													alt="Picture" style="width:366;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4362 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust17042026-03_11.jpeg"
+													alt="Picture" style="width:379;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4363 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust17042026-02_13.jpeg"
+													alt="Picture" style="width:369;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4364 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4365 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust16042026-08_10.jpeg"
+													alt="Picture" style="width:357;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4366 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust16042026-07_11.jpeg"
+													alt="Picture" style="width:386;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4367 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust16042026-06_11.jpeg"
+													alt="Picture" style="width:365;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4368 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4369 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust16042026-04_15.jpeg"
+													alt="Picture" style="width:372;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4370 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4371 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust16042026-02_13.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4372 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust16042026_11.jpeg" alt="Picture"
+													style="width:365;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4373 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust15042026-06_13.jpeg"
+													alt="Picture" style="width:378;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4374 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust15042026-05_11.jpeg"
+													alt="Picture" style="width:366;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4375 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust15042026-04_13.jpeg"
+													alt="Picture" style="width:364;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4376 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4377 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust15042026-02_13.jpeg"
+													alt="Picture" style="width:349;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4378 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust15042026_11.jpeg" alt="Picture"
+													style="width:351;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4379 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4380 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust14042026-04_11.jpeg"
+													alt="Picture" style="width:368;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4381 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust14042026-03_11.jpeg"
+													alt="Picture" style="width:354;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4382 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust14042026-02_14.jpeg"
+													alt="Picture" style="width:367;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4383 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust14042026_11.jpeg" alt="Picture"
+													style="width:368;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4384 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-10_13.jpeg"
+													alt="Picture" style="width:351;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4385 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-09_11.jpeg"
+													alt="Picture" style="width:343;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4386 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-08_13.jpeg"
+													alt="Picture" style="width:372;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4387 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-07_9.jpeg"
+													alt="Picture" style="width:355;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4388 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-06_13.jpeg"
+													alt="Picture" style="width:367;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4389 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-05_11.jpeg"
+													alt="Picture" style="width:360;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4390 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-04_13.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4391 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4392 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026-02_13.jpeg"
+													alt="Picture" style="width:360;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4393 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust13042026_9.jpeg" alt="Picture"
+													style="width:373;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4394 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4395 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust12042026-03_10.jpeg"
+													alt="Picture" style="width:361;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4396 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust12042026-02_11.jpeg"
+													alt="Picture" style="width:345;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4397 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust12042026_11.jpeg" alt="Picture"
+													style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4398 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust11042026-06_12.jpeg"
+													alt="Picture" style="width:347;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4399 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust11042026-05_8.jpeg"
+													alt="Picture" style="width:370;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4400 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust11042026-04_11.jpeg"
+													alt="Picture" style="width:389;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4401 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust11042026-03_14.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4402 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4403 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust11042026_11.jpeg" alt="Picture"
+													style="width:364;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4404 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust10042026-02_25.jpeg"
+													alt="Picture" style="width:366;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4405 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust10042026-02_26.jpeg"
+													alt="Picture" style="width:366;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4406 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust10042026_11.jpeg" alt="Picture"
+													style="width:373;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4407 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust09042026-05_13.jpeg"
+													alt="Picture" style="width:356;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4408 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust09042026-04_11.jpeg"
+													alt="Picture" style="width:360;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4409 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4410 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust09042026-02_11.jpeg"
+													alt="Picture" style="width:348;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4411 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust09042026_8.jpeg" alt="Picture"
+													style="width:347;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4412 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust08042026-04_16.jpeg"
+													alt="Picture" style="width:362;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4413 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust08042026-03_11.jpeg"
+													alt="Picture" style="width:375;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4414 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust08042026-02_14.jpeg"
+													alt="Picture" style="width:373;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4415 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust08042026_12.jpeg" alt="Picture"
+													style="width:356;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4416 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust07042026-05_12.jpeg"
+													alt="Picture" style="width:352;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4417 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust07042026-04_8.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4418 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust07042026-03_13.jpeg"
+													alt="Picture" style="width:375;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4419 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust07042026-02_11.jpeg"
+													alt="Picture" style="width:368;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4420 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust07042026_13.jpeg" alt="Picture"
+													style="width:361;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4421 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust06042026-03_12.jpeg"
+													alt="Picture" style="width:359;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4422 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust06042026-04_11.jpeg"
+													alt="Picture" style="width:360;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4423 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust06042026-02_13.jpeg"
+													alt="Picture" style="width:345;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4424 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust06042026_11.jpeg" alt="Picture"
+													style="width:346;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4425 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4426 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust05042026-02_11.jpeg"
+													alt="Picture" style="width:357;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4427 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4428 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-09_14.jpeg"
+													alt="Picture" style="width:389;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4429 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-08_8.jpeg"
+													alt="Picture" style="width:350;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4430 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-07_13.jpeg"
+													alt="Picture" style="width:362;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4431 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-06_11.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4432 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-05_13.jpeg"
+													alt="Picture" style="width:359;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4433 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-04_8.jpeg"
+													alt="Picture" style="width:357;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4434 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-03_13.jpeg"
+													alt="Picture" style="width:369;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4435 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026-02_9.jpeg"
+													alt="Picture" style="width:361;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4436 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust04042026_11.jpeg" alt="Picture"
+													style="width:371;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4437 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust03042026-07_11.jpeg"
+													alt="Picture" style="width:351;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4438 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4439 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust03042026-05_11.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4440 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust03042026-04_11.jpeg"
+													alt="Picture" style="width:364;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4441 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust03042026-03_8.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4442 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust03042026-02_17.jpeg"
+													alt="Picture" style="width:351;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4443 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust03042026_11.jpeg" alt="Picture"
+													style="width:355;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4444 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust02042026-07_13.jpeg"
+													alt="Picture" style="width:372;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4445 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust02042026-06_8.jpeg"
+													alt="Picture" style="width:343;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4446 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4447 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust02042026-04_14.jpeg"
+													alt="Picture" style="width:346;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4448 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust02042026-03_11.jpeg"
+													alt="Picture" style="width:350;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4449 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4450 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust02042026_11.jpeg" alt="Picture"
+													style="width:354;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4451 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust01042026-08_12.jpeg"
+													alt="Picture" style="width:349;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4452 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust01042026-07_12.jpeg"
+													alt="Picture" style="width:351;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4453 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4454 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust01042026-05_8.jpeg"
+													alt="Picture" style="width:359;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4455 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust01042026-04_13.jpeg"
+													alt="Picture" style="width:350;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4456 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust01042026-03_12.jpeg"
+													alt="Picture" style="width:355;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4457 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust01042026-02_12.jpeg"
+													alt="Picture" style="width:auto;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-4458 wsite-custom-background"
+						style="height: auto;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<div>
+										<div class="wsite-image wsite-image-border-thick wsite-image-border-black"
+											style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+											<a>
+												<img src="uploads/1/4/2/1/142179781/cust01042026_12.jpeg" alt="Picture"
+													style="width:361;max-width:100%" />
+											</a>
+											<div style="display:block;font-size:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		
+	</div>
+
+	<div class="overlay w-navpane-close"></div>
+
+	<script type="text/javascript" src="files/theme/files/plugins.js"></script>
+	<script type="text/javascript" src="files/theme/files/custom.js"></script>
+
+
+
+	</form>
+	<div id="customer-accounts-app"></div>
+	<script src="http://cdn11.editmysite.com/js/site/main-customer-accounts-site.js?buildtime=1234"></script>
+
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<form></form>
+
+	<div id="myarrow">
+		<form method="get" action="customersgallery.html">
+			<button id="submitinfo"><i class="fas fa-chevron-left"></i></button>
+		</form>
+		<form method="get" action="customersgallery2.html">
+			<button id="submitselect"><i class="fas fa-chevron-right"></i></button>
+		</form><br><br><br><br><br>
+
+	</div>
+
+</body>
+
+</html>

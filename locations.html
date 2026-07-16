@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Locations - I DID SOLUTION</title>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+
+	<link id="wsite-base-style" rel="stylesheet" type="text/css"
+		href="http://cdn11.editmysite.com/css/sites.css?buildtime=1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/old/fancybox.css?buildtime=1234" />
+	<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/social-icons.css?buildtime=1234"
+		media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="files/main_style.css?1783910034" title="wsite-theme-css" />
+	<link href='http://cdn2.editmysite.com/fonts/Lato/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Lora/font.css?2' rel='stylesheet' type='text/css' />
+
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Sans/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Serif/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Coustard/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Serif/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Droid_Serif/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Open_Sans/font.css?2' rel='stylesheet' type='text/css' />
+	<link href='http://cdn2.editmysite.com/fonts/Actor/font.css?2' rel='stylesheet' type='text/css' />
+	<style type='text/css'>
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {
+			font-family: "Droid Sans" !important;
+		}
+
+		#wsite-content div.paragraph,
+		#wsite-content p,
+		#wsite-content .product-block .product-title,
+		#wsite-content .product-description,
+		#wsite-content .wsite-form-field label,
+		#wsite-content .wsite-form-field label,
+		.blog-sidebar div.paragraph,
+		.blog-sidebar p,
+		.blog-sidebar .wsite-form-field label,
+		.blog-sidebar .wsite-form-field label {
+			color: #818181 !important;
+		}
+
+		.wsite-elements.wsite-footer div.paragraph,
+		.wsite-elements.wsite-footer p,
+		.wsite-elements.wsite-footer .product-block .product-title,
+		.wsite-elements.wsite-footer .product-description,
+		.wsite-elements.wsite-footer .wsite-form-field label,
+		.wsite-elements.wsite-footer .wsite-form-field label {}
+
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {
+			font-family: "Droid Serif" !important;
+			font-style: normal !important;
+			letter-spacing: 0px !important;
+		}
+
+		#wsite-content h2,
+		#wsite-content .product-long .product-title,
+		#wsite-content .product-large .product-title,
+		#wsite-content .product-small .product-title,
+		.blog-sidebar h2 {
+			color: #2a2a2a !important;
+		}
+
+		.wsite-elements.wsite-footer h2,
+		.wsite-elements.wsite-footer .product-long .product-title,
+		.wsite-elements.wsite-footer .product-large .product-title,
+		.wsite-elements.wsite-footer .product-small .product-title {
+			font-family: "Coustard" !important;
+			color: #513c2d !important;
+			letter-spacing: 1px !important;
+		}
+
+		#wsite-title {
+			font-family: "Droid Serif" !important;
+			font-weight: 700 !important;
+			font-style: normal !important;
+			text-transform: uppercase !important;
+		}
+
+		.wsite-not-footer h2.wsite-content-title a,
+		.wsite-not-footer .paragraph a,
+		.wsite-not-footer blockquote a,
+		#blogTable .blog-sidebar a,
+		#blogTable .blog-comments a,
+		#blogTable .blog-comments-bottom a,
+		#wsite-com-store a,
+		#wsite-com-product-gen a {
+			color: #2a2a2a !important;
+		}
+
+		.wsite-menu-default a {}
+
+		.wsite-menu a {}
+
+		.wsite-image div,
+		.wsite-caption {}
+
+		.galleryCaptionInnerText {}
+
+		.fancybox-title {}
+
+		.wslide-caption-text {}
+
+		.wsite-phone {}
+
+		.wsite-headline,
+		.wsite-header-section .wsite-content-title {
+			font-family: "Droid Serif" !important;
+			font-weight: 700 !important;
+			color: #fff !important;
+			font-style: normal !important;
+			text-transform: uppercase !important;
+			letter-spacing: 4px !important;
+		}
+
+		.wsite-headline-paragraph,
+		.wsite-header-section .paragraph {
+			font-family: "Open Sans" !important;
+			color: #fdf9f9 !important;
+		}
+
+		.wsite-button-inner {
+			font-family: "Actor" !important;
+			font-style: normal !important;
+		}
+
+		.wsite-not-footer blockquote {}
+
+		.wsite-footer blockquote {}
+
+		.blog-header h2 a {}
+
+		#wsite-content h2.wsite-product-title {}
+
+		.wsite-product .wsite-product-price a {}
+
+		.wsite-not-footer h2.wsite-content-title a:hover,
+		.wsite-not-footer .paragraph a:hover,
+		.wsite-not-footer blockquote a:hover,
+		#blogTable .blog-sidebar a:hover,
+		#blogTable .blog-comments a:hover,
+		#blogTable .blog-comments-bottom a:hover,
+		#wsite-com-store a:hover,
+		#wsite-com-product-gen a:hover {
+			color: #8d5024 !important;
+		}
+
+		.wsite-button-small .wsite-button-inner {
+			font-size: 14px !important;
+		}
+
+		.wsite-button-large .wsite-button-inner {
+			font-size: 15px !important;
+		}
+
+		@media screen and (min-width: 767px) {
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {
+				font-size: 17px !important;
+				line-height: 33px !important;
+			}
+
+			#wsite-content div.paragraph,
+			#wsite-content p,
+			#wsite-content .product-block .product-title,
+			#wsite-content .product-description,
+			#wsite-content .wsite-form-field label,
+			#wsite-content .wsite-form-field label,
+			.blog-sidebar div.paragraph,
+			.blog-sidebar p,
+			.blog-sidebar .wsite-form-field label,
+			.blog-sidebar .wsite-form-field label {}
+
+			.wsite-elements.wsite-footer div.paragraph,
+			.wsite-elements.wsite-footer p,
+			.wsite-elements.wsite-footer .product-block .product-title,
+			.wsite-elements.wsite-footer .product-description,
+			.wsite-elements.wsite-footer .wsite-form-field label,
+			.wsite-elements.wsite-footer .wsite-form-field label {}
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {
+				line-height: 23px !important;
+			}
+
+			#wsite-content h2,
+			#wsite-content .product-long .product-title,
+			#wsite-content .product-large .product-title,
+			#wsite-content .product-small .product-title,
+			.blog-sidebar h2 {}
+
+			.wsite-elements.wsite-footer h2,
+			.wsite-elements.wsite-footer .product-long .product-title,
+			.wsite-elements.wsite-footer .product-large .product-title,
+			.wsite-elements.wsite-footer .product-small .product-title {
+				font-size: 13px !important;
+			}
+
+			#wsite-title {
+				font-size: 22px !important;
+			}
+
+			.wsite-menu-default a {}
+
+			.wsite-menu a {}
+
+			.wsite-image div,
+			.wsite-caption {}
+
+			.galleryCaptionInnerText {}
+
+			.fancybox-title {}
+
+			.wslide-caption-text {}
+
+			.wsite-phone {}
+
+			.wsite-headline,
+			.wsite-header-section .wsite-content-title {
+				font-size: 58px !important;
+				line-height: 60px !important;
+			}
+
+			.wsite-headline-paragraph,
+			.wsite-header-section .paragraph {
+				font-size: 18px !important;
+			}
+
+			.wsite-button-inner {}
+
+			.wsite-not-footer blockquote {}
+
+			.wsite-footer blockquote {}
+
+			.blog-header h2 a {}
+
+			#wsite-content h2.wsite-product-title {}
+
+			.wsite-product .wsite-product-price a {}
+		}
+	</style>
+	<style>
+		.wsite-background {
+			background-image: url("/uploads/1/4/2/1/142179781/background-images/1177546391.jpg") !important;
+			background-repeat: no-repeat !important;
+			background-position: 50% 50% !important;
+			background-size: 100% !important;
+			background-color: transparent !important;
+			background: inherit;
+		}
+
+		body.wsite-background {
+			background-attachment: fixed !important;
+		}
+
+		.wsite-background.wsite-custom-background {
+			background-size: cover !important
+		}
+	</style>
+	<script src='files/templateArtifacts.js?1782283792'></script>
+	<script>
+		var STATIC_BASE = '//cdn1.editmysite.com/';
+		var ASSETS_BASE = '//cdn11.editmysite.com/';
+		var STYLE_PREFIX = 'wsite';
+	</script>
+	<script src='https://cdn11.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+	<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+	<script src="http://cdn11.editmysite.com/js/site/main.js?buildtime=1234"></script>
+	<script type="text/javascript">
+		function initCustomerAccountsModels() {
+			(function () {
+				_W.setup_rpc({ "url": "\/ajax\/api\/JsonRPC\/CustomerAccounts\/", "actions": { "CustomerAccounts": [{ "name": "login", "len": 2, "multiple": false, "standalone": false }, { "name": "logout", "len": 0, "multiple": false, "standalone": false }, { "name": "getSessionDetails", "len": 0, "multiple": false, "standalone": false }, { "name": "getAccountDetails", "len": 0, "multiple": false, "standalone": false }, { "name": "getOrders", "len": 0, "multiple": false, "standalone": false }, { "name": "register", "len": 4, "multiple": false, "standalone": false }, { "name": "emailExists", "len": 1, "multiple": false, "standalone": false }, { "name": "passwordReset", "len": 1, "multiple": false, "standalone": false }, { "name": "passwordUpdate", "len": 3, "multiple": false, "standalone": false }, { "name": "validateSession", "len": 1, "multiple": false, "standalone": false }] }, "namespace": "_W.CustomerAccounts.RPC" });
+				_W.setup_model_rpc({ "rpc_namespace": "_W.CustomerAccounts.RPC", "model_namespace": "_W.CustomerAccounts.BackboneModelData", "collection_namespace": "_W.CustomerAccounts.BackboneCollectionData", "bootstrap_namespace": "_W.CustomerAccounts.BackboneBootstrap", "models": { "CustomerAccounts": { "_class": "CustomerAccounts.Model.CustomerAccounts", "defaults": null, "validation": null, "types": null, "idAttribute": null, "keydefs": null } }, "collections": { "CustomerAccounts": { "_class": "CustomerAccounts.Collection.CustomerAccounts" } }, "bootstrap": [] });
+			})();
+		}
+		if (document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if (document.documentElement.initCustomerAccountsModels === 0) {
+			document.documentElement.initCustomerAccountsModels++
+		}
+	</script>
+	<script type="text/javascript"> _W = _W || {}; _W.securePrefix = 'UNSET'; </script>
+	<script>_W = _W || {};
+		_W.customerLocale = "en_US";
+		_W.storeName = null;
+		_W.isCheckoutReskin = false;
+		_W.storeCountry = "MY";
+		_W.storeCurrency = "MYR";
+		_W.storeEuPrivacyPolicyUrl = "";
+		com_currentSite = "184871675833079619";
+		com_userID = "142179781";</script>
+	<script type="text/javascript">_W.configDomain = "";</script>
+	<script>_W.relinquish && _W.relinquish()</script>
+	<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+	<script> _W.themePlugins = { "navpane": { "condense": 1024, "forced": 1 } };</script>
+	<script src='http://cdn11.editmysite.com/js/site/theme-plugins.js?buildtime=1234'></script>
+	<script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script>
+	<script src='files/custom.js?'></script>
+
+
+</head>
+
+<body class="no-header-page  wsite-page-locations  wsite-theme-light">
+	<div id="header">
+		<div class="container">
+			<div class="icons">
+				<div class="w-navpane-trigger hamburger">
+					<span></span>
+				</div>
+			</div>
+			<div class="logo"><span class="wsite-logo">
+
+					<a href="">
+						<img src="uploads/1/4/2/1/142179781/logo-i-did.png" alt="I DID SOLUTION" />
+					</a>
+
+				</span></div>
+			<div class="icons">
+				<span class="wsite-search">
+					<form id="wsite-header-search-form" action="/apps/search" method="get">
+						<input type="text" name="q" class="wsite-search-input" autocomplete="off"
+							placeholder="Search" /><span class="wsite-search-button"><span
+								class="wsite-search-button-inner"></span></span>
+					</form>
+				</span>
+
+				<a href="#" class="close w-navpane-close"><span></span></a>
+			</div>
+		</div>
+		<div id="navlist" class="w-navlist nav">
+			<ul class="wsite-menu-default">
+
+				<li id="pg817708672520187469" class="wsite-menu-item-wrap">
+					<a href="index.html" class="wsite-menu-item ">
+						Home
+
+					</a>
+
+				</li>
+				<li id="pg951052402158070607" class="wsite-menu-item-wrap">
+					<a href="about-us.html" class="wsite-menu-item ">
+						About Us
+
+					</a>
+
+				</li>
+				<li id="active" class="wsite-menu-item-wrap">
+					<a href="locations.html" class="wsite-menu-item ">
+						Locations
+
+					</a>
+
+				</li>
+				<li id="pg931450842924258809" class="wsite-menu-item-wrap">
+					<a href="contact-us.html" class="wsite-menu-item ">
+						Contact Us
+
+					</a>
+
+				</li>
+				<li id="pg221003514715643967" class="wsite-menu-item-wrap">
+					<a href="price-list.html" class="wsite-menu-item ">
+						Price List
+
+					</a>
+
+				</li>
+				<li id="pg884099455981035589" class="wsite-menu-item-wrap">
+					<a href="new-arrival.html" class="wsite-menu-item ">
+						New Arrival
+
+					</a>
+
+				</li>
+			</ul>
+		</div>
+		<div id="menu" class="slide-panel">
+			<div id="nav" class="nav w-navpane">
+				<div class="container">
+					<ul class="wsite-menu-default">
+
+						<li id="pg817708672520187469" class="wsite-menu-item-wrap">
+							<a href="index.html" class="wsite-menu-item ">
+								Home
+
+							</a>
+
+						</li>
+						<li id="pg951052402158070607" class="wsite-menu-item-wrap">
+							<a href="about-us.html" class="wsite-menu-item ">
+								About Us
+
+							</a>
+
+						</li>
+						<li id="active" class="wsite-menu-item-wrap">
+							<a href="locations.html" class="wsite-menu-item ">
+								Locations
+
+							</a>
+
+						</li>
+						<li id="pg931450842924258809" class="wsite-menu-item-wrap">
+							<a href="contact-us.html" class="wsite-menu-item ">
+								Contact Us
+
+							</a>
+
+						</li>
+						<li id="pg221003514715643967" class="wsite-menu-item-wrap">
+							<a href="price-list.html" class="wsite-menu-item ">
+								Price List
+
+							</a>
+
+						</li>
+						<li id="pg884099455981035589" class="wsite-menu-item-wrap">
+							<a href="new-arrival.html" class="wsite-menu-item ">
+								New Arrival
+
+							</a>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="search" class="slide-panel">
+			<div class="container">Search by typing &amp; pressing enter</div>
+		</div>
+		<div id="cart" class="slide-panel">
+			<div class="container">
+				<h2>YOUR CART</h2>
+			</div>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="banner">
+			<div class="banner-content"></div>
+		</div>
+
+		<div id="main">
+			<div id="wsite-content" class="wsite-elements wsite-not-footer">
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-background-2 wsite-custom-background">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<h2 class="wsite-content-title" style="text-align:center;">Location</h2>
+
+									<!-- <div class="wsite-map"><iframe allowtransparency="true" frameborder="0"
+											scrolling="no"
+											style="width: 100%; height: 300px; margin-top: 10px; margin-bottom: 10px;"
+											src="http:///weebly/apps/generateMap.php?map=google&elementid=161384718897774636&ineditor=0&control=3&width=auto&height=300px&overviewmap=0&scalecontrol=0&typecontrol=0&zoom=17&long=100.1944611&lat=6.439392&domain=&point=1&align=1&reseller=false"></iframe>
+									</div> -->
+
+									<div class="wsite-spacer" style="height:33px;"></div>
+
+									<div>
+										<div class="wsite-multicol">
+											<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+												<table class="wsite-multicol-table">
+													<tbody class="wsite-multicol-tbody">
+														<tr class="wsite-multicol-tr">
+															<td class="wsite-multicol-col"
+																style="width:33.333333333333%; padding:0 15px;">
+
+
+
+																<div class="paragraph"><strong>
+																		<font color="#2a2a2a">&#8203;Business Hours
+																		</font>
+																	</strong><br />Mon:&nbsp;<span>10:30 AM &ndash; 6:30
+																		PM</span><br />Tue:&nbsp;<span>10:30 AM &ndash;
+																		6:30 PM</span><br />Wed:&nbsp;<span>10:30 AM
+																		&ndash; 6:30
+																		PM</span><br />Thu:&nbsp;<span>10:30 AM &ndash;
+																		6:30 PM</span><br />Fri:&nbsp;<span>10:30 AM
+																		&ndash; 6:30
+																		PM</span><br />Sat:&nbsp;<span>10:30 AM &ndash;
+																		6:30
+																		PM</span><br />Sun:&nbsp;<span>Closed</span>
+																</div>
+
+																<div class="paragraph"><strong>
+																		<font color="#2a2a2a">&#8203;Business Hours
+																			(Branch Kangar Jaya Only)</font>
+																	</strong><br />Mon:&nbsp;<span>2:00 PM &ndash; 10:00
+																		PM</span><br />Tue:&nbsp;<span
+																		style="color:rgb(129, 129, 129)">10:00 AM
+																		&ndash; 10:00 PM</span><br />Wed:&nbsp;<span
+																		style="color:rgb(129, 129, 129)">10:00 AM
+																		&ndash; 10:00 PM</span><br />Thu:&nbsp;<span
+																		style="color:rgb(129, 129, 129)">10:00 AM
+																		&ndash; 10:00 PM</span><br />Fri:&nbsp;<span
+																		style="color:rgb(129, 129, 129)">10:00 AM
+																		&ndash; 10:00 PM</span><br />Sat:&nbsp;<span
+																		style="color:rgb(129, 129, 129)">10:00 AM
+																		&ndash; 10:00
+																		PM</span><br />Sun:&nbsp;<span>2.00 PM - 10.00
+																		PM</span></div>
+
+
+
+															</td>
+															<td class="wsite-multicol-col"
+																style="width:38.509316770186%; padding:0 15px;">
+
+
+
+																<div class="paragraph" style="text-align:left;"><strong>
+																		<font color="#2a2a2a">Address</font>
+																	</strong><br />
+																	<font color="#515151">&#8203;I DID SOLUTION HQ
+																		KANGAR / I DID PC<br /></font>F47 &amp; F48,
+																	Tingkat 1 (Atas),<br />&#8203;Kompleks Kayangan
+																	Square (The Store),<br />&#8203;01000
+																	Kangar,<br />Perlis
+																</div>
+
+																<div class="paragraph" style="text-align:left;">
+																	<font color="#515151">I DID SOLUTION ARAU</font>
+																	<br />ECO-Shop Arau,<br />Jalan
+																	Arau-Kodiang,<br />02600 Arau,<br />&#8203;Perlis
+																</div>
+
+																<div class="paragraph" style="text-align:left;">
+																	<font color="#515151">I DID SOLUTION KANGAR JAYA
+																	</font><br /><strong>25, Jalan Kangar Jaya 14,
+																		<br />Kangar Jaya, <br />01000 Kangar,
+																		<br />Perlis</strong><br />(Sebelah Zus Coffee
+																	Kangar Jaya)
+																</div>
+
+
+
+															</td>
+															<td class="wsite-multicol-col"
+																style="width:28.15734989648%; padding:0 15px;">
+
+
+
+																<div class="wsite-spacer" style="height:50px;"></div>
+
+
+
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="wsite-spacer" style="height:50px;"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wsite-section-wrap">
+					<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-126 wsite-custom-background"
+						style="height: auto;background-color: #67bcc5;background-image: none;">
+						<div class="wsite-section-content">
+							<div class="container">
+								<div class="wsite-section-elements">
+									<h2 class="wsite-content-title" style="text-align:center;">
+										<font color="#ffffff" size="6"><strong>WE ARE AVAILABE ON</strong></font>
+									</h2>
+
+									<div style="text-align:center;">
+										<div style="height:0px;overflow:hidden"></div>
+										<span class="wsite-social wsite-social-default"><a
+												class='first-child wsite-social-item wsite-social-facebook'
+												href='https://www.facebook.com/muhd.aidid.3382' target='_blank'
+												alt='Facebook' aria-label='Facebook'><span
+													class='wsite-social-item-inner'></span></a><a
+												class='wsite-social-item wsite-social-instagram'
+												href='https://www.instagram.com/ididsolution/' target='_blank'
+												alt='Instagram' aria-label='Instagram'><span
+													class='wsite-social-item-inner'></span></a><a
+												class='last-child wsite-social-item wsite-social-mail'
+												href='mailto:ididsolution@yahoo.com' target='_blank' alt='Mail'
+												aria-label='Mail'><span
+													class='wsite-social-item-inner'></span></a></span>
+										<div style="height:0px;overflow:hidden"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		
+	</div>
+
+	<div class="overlay w-navpane-close"></div>
+
+	<script type="text/javascript" src="files/theme/files/plugins.js"></script>
+	<script type="text/javascript" src="files/theme/files/custom.js"></script>
+	<div id="customer-accounts-app"></div>
+	<script src="http://cdn11.editmysite.com/js/site/main-customer-accounts-site.js?buildtime=1234"></script>
+
+
+</body>
+
+</html>
