@@ -133,7 +133,6 @@ window.addEventListener('error', function (event) {
   }
 }, true); // The 'true' flag is critical to capture errors flowing up the DOM tree
 
-
 document.addEventListener("submit", function (event) {
   // Find the search form (adjust selectors if your form has a specific class or ID)
   var searchForm = event.target.closest('form[action*="/apps/search"]');
@@ -234,7 +233,6 @@ async function findHighestNumberFast() {
             currentStart += batchSize; 
         }
     }
-
     console.log('Highest number found:', highestNum);
     return highestNum;
 }
